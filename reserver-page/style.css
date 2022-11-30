@@ -1,0 +1,276 @@
+/* The body in general  */
+@import url('../Front-end-tools/Font/LemonMilk.otf');
+@import url('../Front-end-tools/Font/Century-Gothic.ttf');
+body{
+    font-family: 'Century Gothic', sans-serif;
+}
+
+a
+/* navbar */
+nav{
+    position: absolute;
+    z-index: 4;
+    height: 10vh !important;
+    width: 100%;
+}
+nav .container{
+    font-family: 'Lemon/Milk light', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+.logo{
+    width: 120px;
+    height: fit-content;
+}
+.logo img{
+    width: 120px !important;
+    width: 100% !important;
+    height: auto;
+    border-radius: 5px;
+}
+nav a{
+    text-decoration: none;
+    margin-inline: 11px;
+    color: #F57120 !important;
+    transition: all ease-in-out 200ms;
+}
+nav a:hover{
+    color: #f57220ad !important;
+}
+nav .btn:hover{
+    color: #ffffffcc !important;
+}
+nav .btn{
+    width: 120px;
+    background-color: #F57120;
+    border-radius: 5px;
+    transition: all ease-in-out 200ms;
+    color: white !important;
+}
+.pc-nav{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+.icon2{
+    font-size: 12rem;
+}
+.pc-nav{
+    display: none;
+    justify-content: space-between;
+}
+.mobile-nav{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 85%;
+    right: 0;
+    top: 0%;
+}
+.mobile-nav a{
+    color: #92C83E;
+    margin-block: 20px;
+    text-decoration: none !important;
+    font-size: 1.5rem !important;    
+    font-family: myFirstFont;
+}
+.n{
+    display: flex;
+}
+.b{
+    display: none !important;
+}
+.pc-nav i{
+    position: absolute;
+    right: 15px;
+    z-index: 2;
+    font-size: 1.7rem;
+    color: #92C83E;
+}
+.wrapper{
+    overflow-y: scroll;
+    height: 80vh !important;
+}
+.col-md-7::-webkit-scrollbar {
+    width: 7px;
+}
+.col-md-7::-webkit-scrollbar-track {
+    border-radius: 3px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.col-md-7::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #93c83e57;
+}
+.col-md-7::-webkit-scrollbar-thumb:hover{
+    background-color: #f5722048;
+}
+
+/* content */
+.con{
+    height: 100vh !important;
+}
+.con .cont{
+    margin-top: 10vh !important;
+}
+.banner{
+    height: 100vh !important;
+    min-height: 100vh;
+    background:  url("../Front-end-tools/2.jpg") center/cover no-repeat;
+    padding-bottom: 50px; color: #fff;
+    overflow-y: hidden;
+}
+.col-md-7{
+    background: #1d3d1969;
+}  
+.form-reserve{
+    margin: 0 auto;
+    max-width: 700px;
+} 
+.form-group, .form-seck{
+    margin: 25px;
+} 
+.form-control, form select, #msg_box{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 19px;
+    background: transparent;
+}
+.form-control:focus {
+    background: transparent;
+    border-bottom: 1px solid #92C83E;
+}   
+.form-control[type = text] ,.form-control[type = number] ,.form-control[type = date]  ,.form-control[type = email]  
+,.form-control[type = tel] ,select 
+,.form-control::placeholder ,#msg_box::placeholder{
+    color: #fff;
+}
+.form-seck input{
+    margin: 10px 10px;
+}
+.lab{
+    margin-top: 8px;
+}
+#état, #état2{
+    margin-left: 17px;
+}
+.rad{
+    margin-left: 171px;
+    cursor: pointer;
+}
+.rad0{
+    margin-left: 145px;
+    cursor: pointer;
+}
+.rad1{
+    margin-left: 130px;
+    cursor: pointer;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #fff;
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#sel{
+    padding: 5px 10px;
+    width: 47%;
+}
+.opt{
+    background-color: #92C83E;
+}
+#seck{
+    padding: 5px 10px;
+    width: 100%;
+}
+.multiselect{
+    width: 510px;   
+}
+.selectBox{
+    position: relative;
+}
+.overSelect{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#checkboxes{
+    display: none;
+    border: 1px #92C83E solid;
+}
+#checkboxes label{
+    display: block;
+}
+#checkboxes label:hover{
+    background-color: #92C83E;
+}
+#checkboxes .change:hover{
+    background-color: #F57120;
+}
+input[type="checkbox"], input[type="radio"]{
+    accent-color: #92C83E;  
+}
+.rod{
+    margin-left: 25px;
+    accent-color: #92C83E;
+    cursor: pointer;
+}
+#msg_box{
+    color: #fff;
+    resize: none;
+    height: 70px;
+    width: 100%;
+    padding: 0px 10px;
+}
+#input6 #input-group9,
+#input-group10, #input-group11,
+#input-group12{
+    margin-left: 15px;
+}
+.form-group input[type = submit]{
+    margin: 15px 220px 0px;
+    color: #fff;
+    background-color: #92C83E !important;
+    padding: 10px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    animation: leave 0.4s forwards;
+}
+input[type = submit]:hover{
+    animation: hover 0.4s forwards;
+}
+@keyframes hover {
+    from {
+        box-shadow: inset 0 0 0 0.01px #F57120;
+    }
+    to {
+        box-shadow: inset 10.79928em 0 0 0.01px #F57120;
+    }
+}
+@keyframes leave {
+    from {
+        box-shadow: inset -10.79928em 0 0 0.05px #F57120;
+        color: #fff;
+    }
+    to {
+        box-shadow: inset 0 0 0 0.01px #F57120;
+    }
+}
+.swal-button {
+    background-color: #92C83E;
+}
